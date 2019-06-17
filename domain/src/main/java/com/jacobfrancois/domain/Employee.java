@@ -1,4 +1,4 @@
-package jacobfrancois.domain;
+package com.jacobfrancois.domain;
 
 
 import javax.persistence.Entity;
@@ -13,12 +13,13 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
     private String name;
+    private String goesBy;
     private int paygrade;
     private boolean isActive;
 
     public Employee(){}
 
-    public Employee(String name, int paygrade, boolean isActive) {
+    public Employee(String name, String goesBy, int paygrade, boolean isActive) {
         this.name = name;
         this.paygrade = paygrade;
         this.isActive = isActive;
@@ -30,6 +31,10 @@ public class Employee {
 
     public String getName() {
         return name;
+    }
+
+    public String getGoesBy() {
+        return goesBy;
     }
 
     public int getPaygrade() {
