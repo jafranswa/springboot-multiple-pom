@@ -4,6 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<modules>
 		<module>domain</module>
+		<module>persistence</module>
+		<module>web</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -11,7 +13,7 @@
 		<version>2.1.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>com.jacobfrancois</groupId>
 	<artifactId>springboot-multiple-pom</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
